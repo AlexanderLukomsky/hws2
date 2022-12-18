@@ -2,19 +2,37 @@
 }
 
 .input {
+  max-width: 372px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 36px;
+  padding: 8px 10px;
 }
 
 .inputWrapper {
+  position: relative;
+  padding-top: 18px;
 }
 
 .superInput {
+  border-color: #d1d1d1;
 }
 
 .errorInput {
+  border-color: #cc1439;
 }
 
 .errorInput:focus {
 }
 
 .error {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  color: #cc1439;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
