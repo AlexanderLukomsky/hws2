@@ -36,7 +36,6 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = ({
   ...restProps // все остальные пропсы попадут в объект restProps
 }) => {
   const [timerId, setTimerId] = useState<number | undefined>(undefined);
-  console.log("render");
 
   const onChangeTextCallback = (value: string) => {
     onChangeText?.(value);
