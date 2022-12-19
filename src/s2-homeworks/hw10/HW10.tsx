@@ -19,7 +19,6 @@ const HW10 = () => {
   const selectIsLoading = (state: AppStoreType): boolean =>
     state.loading.isLoading;
   const isLoading = useSelector(selectIsLoading);
-  console.log(isLoading);
 
   const setLoading = () => {
     dispatch(loadingAC(true));
