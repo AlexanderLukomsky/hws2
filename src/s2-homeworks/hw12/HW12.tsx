@@ -26,8 +26,6 @@ const HW12 = () => {
   const themeId = useSelector(selectThemeId);
 
   const change = (id: number) => {
-    console.log(document.documentElement.dataset);
-
     dispatch(changeThemeId(id));
   };
 
