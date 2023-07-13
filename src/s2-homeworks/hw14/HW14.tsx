@@ -16,7 +16,7 @@ import { useSearchParams } from "react-router-dom";
 const getTechs = async (find: string) => {
   return axios
     .get<{ techs: string[] }>(
-      "https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2",
+      "https://samurai.it-incubator.io/api/3.0/homework/test2",
       { params: { find } }
     )
     .then((res) => res.data.techs)
@@ -53,7 +53,7 @@ const HW14 = () => {
     const params = Object.fromEntries(searchParams);
     sendQuery(params.find || "");
     setFind(params.find || "");
-  }, []);
+  }, [searchParams]);
 
   const mappedTechs = techs.map((t) => (
     <div key={t} id={"hw14-tech-" + t} className={s.tech}>
